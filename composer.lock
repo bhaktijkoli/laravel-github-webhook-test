@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "4e757f9aa29cb6d94e7648fa2ae61174",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,6 +61,69 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.0.3"
             },
             "time": "2021-03-11T06:42:03+00:00"
+        },
+        {
+            "name": "bhaktijkoli/laravel-github-webhook",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../laravel-github-webhook",
+                "reference": "37b720bde8ef77f06f43c896dbb365152a5b5f49"
+            },
+            "require": {
+                "illuminate/support": "^6.3|^7.0|^8.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bhaktijkoli\\LaravelGithubWebhook\\LaravelGithubWebhookServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bhaktijkoli\\LaravelGithubWebhook\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Bhaktijkoli\\LaravelGithubWebhook\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bhaktij Koli",
+                    "email": "bhaktijkoli121@gmail.cm",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Github Webhook",
+            "homepage": "https://github.com/bhaktijkoli/laravel-github-webhook",
+            "keywords": [
+                "bhaktijkoli",
+                "laravel-github-webhook"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "brick/math",
@@ -7357,7 +7420,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "bhaktijkoli/laravel-github-webhook": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
